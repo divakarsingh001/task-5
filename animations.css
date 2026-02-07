@@ -1,0 +1,31 @@
+/* ===============================
+   ANIMATIONS
+================================ */
+.section {
+  animation: fadeInUp 0.6s ease both;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--accent-color);
+  transform: scale(1.05);
+}
+
+/* JS interaction */
+.highlight {
+  border: 2px solid #1abc9c;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
